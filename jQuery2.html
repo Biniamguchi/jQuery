@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> jQuery demo </title>
+    <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type ="text/javascript">
+    $(document).ready(function(){
+        alert('you are now working on jQuery!');
+
+        $('a').click(function(){
+        alert('you are now leaving the page!');
+        })
+        // //effects methods they toggle the visibility property of items.
+        $('p').hide();
+        $('#hide').click(function(){
+            $('p').hide();
+        })
+        $('#show').click(function(){
+            $('p').show();
+        })
+        // // manipulation methods add/change either text or html to your document.
+        ('h3').hover(function(){
+            $('h2').text('go see the space Needle!');
+
+        });
+        $('.append').click(function(){
+                $('.result').append('<h4>.append adds HTML!</h4>');
+        });
+        // //css method
+        $('button').click(function(){
+            $('button').css('background-color','yellow');
+
+        });
+
+        });
+</script>
+</head>
+<body>
+    <div class='result'> </div>
+    <p> This is a paragraph</p>
+    <p> This is also a paragraph</p>
+    <button id='hide'> This will hide all paragraphs!</button>
+    <button id='show'> click to show all the paragraphs</button>
+    <a id='mylink' href= "http://www.google.com"> Go to google!</a>
+    <h3> Mountain View, California</h3>
+    <h2> Seattle, Washington</h2>
+    <button class='append'> Click to see .append work!</button>
+    <div class='result'> </div>
+</body>
+</html>
