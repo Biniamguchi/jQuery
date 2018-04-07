@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jquery functions</title>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<title>jQuery Functions</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('.clickbutton').click(function(){
@@ -74,16 +74,31 @@
 
 	</script>
 	<style type="text/css">
-		.red {
-			color:red;
+		.wrapper{
+	    width: 1000px;
+	    margin: auto;
+	    background-color: rgb(16,16,16);
+	    padding: 8px;
 		}
+		.head{
+			background: grey;
+		}
+		p, h1, h2{
+			text-align: center;
+		}
+		.head, input{
+			text-align: center;
+		}
+
 	</style>
 </head>
 <body>
-    <fieldset>
-        <h1>My jQuery Basic Assignment</h1>
-        <button><a id='mylink' href= "http://localhost/jQuery.html"> http://localhost/jQuery.html</a></button>
-    </fieldset>
+    <div class="head">
+        <h1>My jQuery Basic Assignment!</h1>
+        <input type="link" value="http://localhost/jQuery.html" id="link">
+        <button id='search'> Search</button>
+        
+    </div>
     <fieldset>
         <div>
         <h2> Click </h2>
