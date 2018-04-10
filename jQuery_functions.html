@@ -12,7 +12,7 @@
 			$(".coding").hide()
 		})
 		$('.dojo').click(function(){
-			$(".coding").show()
+			$(".coding").show() 
 		})
 		$('.campus').click(function(){
 			$(".dojo").toggle()
@@ -55,7 +55,7 @@
 			$("#attr").attr("class", "red")
 		})
 		$('.val').click(function(){
-			console.log($("#val").val())
+			console.log($("#val").val("bin"))
 		})
 		$('.val2').click(function(){
 			$('#val').val("minh")
@@ -73,12 +73,15 @@
 
 
 	</script>
-	<style type="text/css">
+	<style type="text/css"> 
 		.wrapper{
 	    width: 1000px;
 	    margin: auto;
 	    background-color: rgb(16,16,16);
 	    padding: 8px;
+		}
+		.red {
+			color:red;
 		}
 		.head{
 			background: grey;
@@ -131,7 +134,7 @@
         <div>
 	    <h2>SlideDown </h2>
 		<p>provides a slide down animation when showing</p>
-        <p class="hidden" hidden><img src="IMG_7127.JPG" alt="picture"style="width:150px;height:100px;"></p>
+        <p class="hidden" hidden><img src="image1.JPG" alt="picture"style="width:150px;height:100px;"></p>
 		<button class="slideDown">click to see a slide down hidden element</button>
         </div>
 	</fieldset>
@@ -139,7 +142,7 @@
         <div>
 	    <h2>SlideUp </h2>
 		<p>hides and element by sliding up</p>
-        <p id="slideUp"><img src="IMG_7127.JPG" alt="picture"style="width:150px;height:100px;"></p>
+        <p id="slideUp"><img src="image1.JPG" alt="picture"style="width:150px;height:100px;"></p>
 		<button class="slideUp">Click to show the previous hidden button</button>
         </div>
     </fieldset>
