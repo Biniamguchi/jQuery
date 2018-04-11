@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    border: solid black;
+    width: 665px;
+    /*margin-top: 10px;*/
+    height: 470px;
+    margin: auto;  
+}
+#head{
+    background: grey;
+    margin: auto;
+    width: 665px;
+}
+  #box6_container {
+     display: flex;
+     margin-top: 10px;
+     margin: auto;
+     padding: 10px;
+    }
+  fieldset {
+      margin-top: 10PX;
+     margin-right: 10px;
+ }
+h2, input{
+    text-align: center;
+    padding: 5px;
+}
+#head, button{
+    text-align: center;
+}
