@@ -3,7 +3,12 @@
     padding: 0;
 }
 
-body{
-    width: 60.25%;
-    margin: auto;
+#wrapper{
+    margin: 20px auto;
+    width: 100px;
+
+}
+
+img{
+    cursor: pointer;
 }
