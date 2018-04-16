@@ -12,6 +12,8 @@
        $('button').click( function() {
            $('div').append('<h3>I am a dynamically generated H3</h3>');
            attach_h3_handlers();
+          // We call also call it this way but to avoid repetition we prefer attach_h3_handlers(); insted of 
+          //  $('h3').click( function() { alert('You clicked an H3!'); });
        });
    });
 </script>
