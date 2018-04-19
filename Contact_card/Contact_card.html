@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>	
+		<script>
+            function attachDesc(){
+                $('.callback').click(function(){
+                $(this).text($('#desc').val())});
+            }
+			$(document).ready(function(){
+                
+				$('#submit').click(function() {
+					$('#right').append("<div class = 'card'>"+"<p>" + $('#first_name').val()+ " " + $('#last_name').val() + "</p>" + "<p id=hidden class=callback>(Click HERE for description)</p>" + "</div>");
+                    attachDesc();
+                    return false;
+                    });
+				});
+		</script>
+
+	</head>
+	<body>
+		<div id = "wrapper">
+        	<div id ="left">
+			<h2>The Codingdojo contact page</h2>
+			<form>
+				<label>First Name: </label>
+				<input type="text" placeholder="First Name" name="first_name" id="first_name">
+				<label>Last Name: </label>
+				<input type="text" placeholder="Last Name" name="last_name" id="last_name">
+				<label>Description</label>
+				<textarea name="description" id="desc" type="text" placeholder="Enter description"></textarea>
+				<input id="submit" type="submit" value="Add User">
+			</form>
+		</div>		
+		<div id ="right"> </div>
+
+      <div>
+	</body>
+	<style type="text/css">
+	#right {
+		width: 20%;
+		margin: 20px auto;
+        padding: 10px;
+	}
+
+	
+	h1 {
+		border-bottom: 3px solid black;
+		width: 60%;
+	}
+
+	form {
+		width: 24%;
+		margin-left: 100px;
+	}
+
+	input {
+		display: inline-block;
+		width: 300px;
+		margin-right: 15px;
+	}
+    .card{
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        background-color: #EEEEEE;
+        width: 240px;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #CCCCCC;
+        box-shadow: 1px 1px 1px #555555;
+    }
+    textarea{
+            padding: 5px;
+            font-size: 9pt;
+            width: 87%;
+            resize: none;
+        }
+	</style>
+</html>
